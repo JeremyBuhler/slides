@@ -1,4 +1,4 @@
-x!-- .slide: data-background="steelblue" -->
+<!-- .slide: data-background="steelblue" -->
 ## Find Statistics Canada data
 
 **Jeremy Buhler**  
