@@ -1,4 +1,4 @@
-<!-- .slide: data-background="steelblue" -->
+x!-- .slide: data-background="steelblue" -->
 ## Find Statistics Canada data
 
 **Jeremy Buhler**  
@@ -167,7 +167,7 @@ White, S., 2025. _Income Support as Effective Housing Policy in Canada_, Maytree
 <!-- .slide: data-background="#e7f7ff" data-transition="none-in none-out" -->
 
 <p style="margin-bottom: -15px; font-size: 0.6em; ">Share of households that spend 30% or more of their household income on shelter costs,<br/>Canada, 2018, 2021, and 2022 (<a href="https://www150.statcan.gc.ca/n1/daily-quotidien/240910/t001b-eng.htm">table source</a>)</p>
-<img src="shelter_cost_share.PNG" height="75%"/>
+<img src="shelter_cost_share.png" height="75%"/>
 
 - Which variables are needed to recreate this table? 
 
