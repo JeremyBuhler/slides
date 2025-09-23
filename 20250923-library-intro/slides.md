@@ -16,7 +16,7 @@ jeremy.buhler@ubc.ca <!-- .element style="color:white" -->
 - Learn where to get research support
 \
 \
-Slides at [https://bit.ly/515C-2025](https://bit.ly/515C-2025)
+Slides at [https://bit.ly/515C_library](https://bit.ly/515C_library)
 
 ---
 
