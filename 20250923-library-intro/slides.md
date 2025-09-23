@@ -40,14 +40,14 @@ https://library.ubc.ca
 
 <!-- .slide: data-transition="none" -->
 
-![Slide 5 Image](media\library_homepage1.png)
+![Slide 5 Image](media/library_homepage1.png)
 
 
 ---
 
 <!-- .slide: data-transition="none" -->
 
-![Slide 5 Image](media\library_homepage2.png)
+![Slide 5 Image](media/library_homepage2.png)
 
 
 
@@ -102,7 +102,7 @@ notes: synonyms, truncation, limit by publication, limit by geography
 
 ### boolan operators
 
-![Slide 21 Image](media\boolean.png)
+![Slide 21 Image](media/boolean.png)
 
 
 --
