@@ -52,7 +52,7 @@ Note:
 
 <!-- .slide: data-background-iframe="https://www.visualcinnamon.com/art/gdqs/" data-background-interactive -->
 
-![image of scatterplot](images/R_line_intro.png) <!-- .element class="fragment" -->
+![image of scatterplot](images/r_line_intro.png) <!-- .element class="fragment" -->
 
 
 --
