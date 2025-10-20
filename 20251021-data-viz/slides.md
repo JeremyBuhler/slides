@@ -22,7 +22,7 @@ Note:
 - Compare visualization tools <!-- .element class="fragment" -->
 
 
-notes: 
+notes:  
 
 ---
 
@@ -37,16 +37,12 @@ notes:
 
 Note:
 
-1.	Introduction. Describe dual purposes of visualization: a) to explore and identify patterns, and b) to communicate findings. Communicate the scope and purpose of the presentation: to provide a foundation to help students in future self-directed learning, with emphasis on quantitative data graphs used in academic publications. 
-2.	Principles of effective visualization. Introduce pre-attentive visual processing to explain why some visualizations are more effective than others. List considerations when creating graps and plots, with emphasis on clarity and simplicity (for sample content see https://ubc-library-rc.github.io/tableau-intro/content/introduction.html)
-3.	Graph/plot types for quantitative data visualization. Briefly introduce the following, with examples and use cases: histogram, bar plot, line graph, scatterplot, density plot, violin plot.  
-4.	Scatterplot example. Focus on scatterplots to illustrate some of the principles covered in section #2. Show multiple versions of the plot, incrementally improving it by changing the display and contextual elements. I suggest doing this in R and providing the code as a supporting resource, to illustrate how flexible the ggplot R package is. 
-5.	Tools for creating visualizations. Things to consider when choosing software for visualization (e.g. ease of use, reproducibility of output, design flexibility). Discuss three options in more detail (Excel, R, and Tableau) with examples and pros/cons of each.
-
 ---
 
 <!-- .slide: data-background="orange" data-transition="none-in slide-out" -->
 ## Why visualize data?
+
+Notes: So why _do_ we visualize data? I like to start with this basic question because visualizaton has different purposes depending on the context, so it's important to be clear about our intention.
 
 ---
 
@@ -54,6 +50,9 @@ Note:
 
 ![image of scatterplot](images/r_line_intro.png) <!-- .element class="fragment" -->
 
+Notes: In the context of this class and presentation, the main purpose of data visualization is to _communicate_. Aesthetics and creativity are components of well rounded visualizations, but when deciding how to present your data I encourage you to prioritize the clarity of your message. You will come across more artistic visualization examples, some of which may be beautiful and inspiring, but keep your audience and your message front of mind. What you see on the screen is an innovative visual representation of people's diets, but to understand it most users would need to read the fine print (scroll) and take time to _learn_ about the project. 
+
+Now compare that to a much more familiar line graph. More boring? Probably. But in many contexts our audiences won't take the time to _learn_ how to engage with our visualization. We need something that draws the viewer's attention straight to the point, almost intuitively, without much effort on their part. It's this less flashy type of visualization we'll focus on today.  
 
 --
  
@@ -67,8 +66,9 @@ gapminder %>%
   labs(
    title = "Life expectancy of selected countries, 1952-2007",
    subtitle = "Data from Gapminder R package, https://cran.r-project.org/package=gapminder",
-   x = "Year",
+   x = "",
    y = "Life expectancy") +
+   scale_color_brewer(palette = "Set2") +
   theme_minimal()
 ```
 
@@ -79,42 +79,51 @@ gapminder %>%
 > — *Stephen Few,* [*What is Data Visualization*](https://www.perceptualedge.com/blog/?p=2636)
 
 Note:
-This workshop emphasizes the role data visualization plays in the two activities identified above. Visualization makes it easier to explore and understand what’s going on in our data, fulfilling the **sense-making** purpose.  
-It can also improve the **communication** of our findings by drawing attention to the patterns, relationships, and stories we choose to highlight.  
-Data visualizations are often attractive, but it isn’t primarily their visual appeal that makes them work. A chart or graph that communicates effectively taps into the processes of perception and cognition. To create and recognize good visualizations it will help to understand a few concepts.
+Stephen Few and Alberto Cairo are two authors who have shaped my own approach to visualization (there's a resource slide at the end with their names). This quote from Stephen Few is a good place to start when considering the purpose of visualization. 
 
 ---
 
 <!-- .slide: data-transition="slide-in none-out" -->
 ## Purpose of visualization
 
-- Explore to identify trends and patterns <!-- .element class="fragment" -->
+- Explore to identify trends and patterns 
 - Communicate your findings to others <!-- .element class="fragment" -->
 
-Note: It's not just about making pretty things. Reinforce that we're doing this in an academic setting - it's about seeing, understanding, and communicating.
+Note: 
+- Skillfull visualization makes it easier to explore and understand what’s going on in our data: that's the **sense-making** purpose from Stephen Few's definition.  
+- And a good visualization can also improve the **communication** of our findings by drawing attention to the patterns, relationships, and stories we choose to highlight.  
+
+It's not just about making pretty things - it's about seeing, understanding, and communicating.
 
 ---
 
 <!-- .slide: data-background="orange" data-transition="none-in slide-out" -->
 ## Principles of Effective Visualization
 
+Note: So how does it work? Fortunately, there are a few basic principles that anyone can apply to enhance the clarity and effectiveness of visual representations of data.  
+
 ---
 
 <!-- .slide: data-transition="slide-in fade-out" -->
 ![](images/source.png) 
 
-Note:
+Note: 
+There are many content and design choices to make when going from source data about employment in Canada...
 
 ---
 
 <!-- .slide: data-transition="fade-in slide-out" -->
 ![](images/sample-graph.png)
 
+Note:
+...to a map that shows the fluctuation of unemployment rates in the first full year of COVID. This is a map I made using Tableau software, which we'll discuss later. Some of what makes this map work is that it taps into...  
+
 ---
 
 ### Preattentive processing
 
-The eye and brain’s ability to process certain visual properties almost instantly, without conscious effort.
+Note:
+...what's called preattentative processing. That's the "eye and brain’s ability to process certain visual properties almost instantly, without conscious effort." In other words, there are some kinds of visual cues that most people notice instantly, without thinking about it: it's just _there_. Using those cues intentionally, in service to your message, can strengthen your visualizations. 
 
 ---
 
@@ -124,9 +133,21 @@ The eye and brain’s ability to process certain visual properties almost instan
 <span class="small fragment">Figures on this and the next slide from Stephen Few, “Tapping the Power of Visual Perception”  
 [http://www.perceptualedge.com/articles/ie/visual_perception.pdf](http://www.perceptualedge.com/articles/ie/visual_perception.pdf)</span>
 
+Note:
+Let me illustrate. Tell me how many times the number five appears in this block. This task is possible, but it takes effort and it's easy to lose track. 
+
+Now try again. The question is almost absurd this time because it's so obvious: the five's are just there. Because they're darker the eye can pick them out instantly. 
+
+The figures on this and the next slide are again from Stephen Few. 
+
 ---
 
 ![](images/preattentive_attributes.png)
+
+Notes:
+It turns out that color intensity - making the fives darker - is just one of many preattentive properties we can employ to communicate visually. This slide illustrates several others, and they can be combined to encode multiple layers of information in a small visual field.   
+
+While they're all preattentive properties, some are better suited than others to certain tasks, and some might not be perceived the same by all viewers. There's an entire world to explore here, but I'll share a few tips.
 
 ---
 
@@ -135,12 +156,25 @@ Encoding quantities: **length** and **size**
 ![](images/size.png) <!-- .element: class="fragment" -->
 ![](images/length.png) <!-- .element: class="fragment" -->
 
+Notes:
+Both line length and size are preattentive properties shown on the previous slide, but when encoding quantities it's usually better to use length. That's because we tend not be be very good at estimating relative areas.
+
+click: in this case we can tell that B is bigger than A, but I find it hard to say be how much.
+
+click: the bar plot, in contrast, makes it crystal clear: A represents half as much as B. This is one reason to favor bar graphs over pie charts. 
+
 ---
 
 Remove unnecessary content to **focus** the viewer
-
 ![](images/cluttered.png) <!-- .element: class="fragment" -->
 ![](images/clean.png) <!-- .element: class="fragment" -->
+
+Note: 
+This next tip isn't about preattentive processing itself, but it's about clearing the way for the viewer. Stephen Few uses the phrase "reduce non-data ink." 
+
+click: this bar graph isn't bad, but it can be improved by removing unecessary or redundant elements, and by de-emphasizing others. Ideally the viewer will be able to focus more quickly on what you want to communicate...
+
+click: this second example has exactly the same information but is cleaner. The months move to the bottom: still there but out of the way. The percentage axis label isn't necessary because each bar is already labeled, so they're gone. The reader doesn't need exact figures, so the labels are rounded to a 10th of a percent. The result is a visualization that's more direct and pleasant to engage with.
 
 ---
 
@@ -148,12 +182,19 @@ Remove unnecessary content to **focus** the viewer
 
 <span class="small">Source: Jeffrey Shaffer, [https://www.tableau.com/about/blog/2016/4/examining-data-viz-rules-dont-use-red-green-together-53463](https://www.tableau.com/about/blog/2016/4/examining-data-viz-rules-dont-use-red-green-together-53463)</span>
 
+Notes:
+So far the examples I've show are just one color, but if you're using multiple colors be attentive to color blindness. It can be tempting to use the colors that look best to you, but an estimated 8% of men and 2% of women experience some form of red/green colorblindness. In this image, the palette on the right is a similuation of what someone with colorblindness might see when you use the palette on the left. To safeguard agains this, many visualization tools provide palettes that are colorblind friendly. 
+
+
 ---
 
 Use colors intentionally to **encode information**
 
 ![](images/multicolor.png) <!-- .element: class="fragment" -->
 ![](images/singlecolor.png) <!-- .element: class="fragment" -->
+
+Note:
+Another tip about color: it's a useful way to encode information, so try not to waste it where it's not necessary. In this example the months are already identified by their numbers and sequence. In such a case, the decision to add color is purely aesthetic and doesn't carry a data message. But if you save color to encode something else you have another tool at your disposal: for example, to call your viewer's attention to something special about the month of June.
 
 ---
 
@@ -167,6 +208,9 @@ Provide enough context to **orient the viewer**
 - author
 - ...
 
+Note:
+My last tip for data visualizations is to remember to give enough context. You don't want to frustrate a viewer, it's important to give them everything they need to make sense of the visualizaition and understand your message. Sometimes that means your image will be more cluttered than you'd like... always keep the communicative purpose of your visualization in mind, and prioritize understanding over aesthetic choices.
+
 ---
 
 <!-- .slide: data-background="ligthblue" data-transition="slide-in none-out" -->
@@ -179,31 +223,16 @@ Provide enough context to **orient the viewer**
 
 Note:
 
-When creating a visualization, ask:
-
-- What’s the main message?  
-- Does each element serve that message?  
-- Could I remove anything without losing meaning?  
-
-Reducing non-data ink, prove enough context to present data with integrity
-Visual variety can be appealing, but ensure that it also serves the communicative and sense-making purposes of your visualizations.  
-We increase the credibility and integrity of our work by citing data sources and avoiding intentionally misleading displays.  
-(For more about this see Alberto Cairo’s book *[How Charts Lie: Getting Smarter About Visual Information](http://resolve.library.ubc.ca/cgi-bin/catsearch?bid=10081648)*.)
-
-Effective visuals:
-- Use pre-attentive cues to emphasize key patterns  
-- Reduce cognitive effort  
-- Guide the viewer’s eye intentionally  
-
-Ineffective visuals:
-- Overload the viewer  
-- Create confusion or distraction  
+To reinforce that message, here are some guiding principles.
 
 ---
 
 <!-- .slide: data-background="orange" data-transition="none-in slide-out" -->
 # Plot types 
 
+Notes: 
+Let's shift gears. Now you have some ideas about how to use shape, color, length, and other preattentive properties. Let's look at some common plot types. 
+ 
 ---
 
 <div style="padding: 5%; background-color:BlanchedAlmond;">
@@ -211,6 +240,7 @@ Ineffective visuals:
 <p class="small">"For each of 142 countries [...] values for life expectancy, GDP per capita, and population, every five years, from 1952 to 2007."<br/><br/> <a style="color:blue" href="https://cran.r-project.org/package=gapminder">https://cran.r-project.org/package=gapminder</a></p>
 </div>
 
+Notes: data source
 
 ---
 
@@ -364,7 +394,7 @@ gapminder_subset %>%
 ### Line graph
 Show **trend over a continuous variable** (often time)
 
-![line graph example](images/r_line.png)
+![line graph example](images/r_line_intro.png)
 
 
 Note:
