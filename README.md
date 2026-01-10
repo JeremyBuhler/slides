@@ -7,15 +7,15 @@ Selected presentations by Jeremy Buhler, Data Librarian, UBC Library.
 
 | Folder name | Presentation title | Notes |
 | --- | --- | --- |
-| <20251021-data-viz/> | Data visualization: principles and tools | CHBE course |
-| <20250923-library-intro/> | Overview of UBC Library resources | JRNL 515C class |
-| <20250919-statcan-data/> | Find Statistics Canada data | SOWK class |
-| <20250318-nvivo/> | NVivo introduction: Annotation, coding, queries | workshop, co-presented with Milan Simić |
-| <20250117-LIBR559S/> | UBC Library operational data | LIBR 559S class |
-| <20240911-nvivo/> | NVivo introduction: Annotation, coding, queries | workshop |
-| <20240625-ga-overview/> | Website activity data: Google Analytics overview | internal UBC Library presentation |
-| <20240606-mental-health-data/> | Finding mental health data: Overview of sources | for UBC Institute of Mental Health |
-| <20240318-census/> | Canada Census Data: 2021 Census of Population | GEOG 450 class |
+| 20251021-data-viz/ | [Data visualization: principles and tools](20251021-data-viz/) | CHBE course |
+| 20250923-library-intro/ | [Overview of UBC Library resources](20250923-library-intro/) | JRNL 515C class |
+| 20250919-statcan-data/ | [Find Statistics Canada data](20250919-statcan-data/) | SOWK class |
+| 20250318-nvivo/ | [NVivo introduction: Annotation, coding, queries](20250318-nvivo/) | workshop, co-presented with Milan Simić |
+| 20250117-LIBR559S/ | [UBC Library operational data](20250117-LIBR559S/) | LIBR 559S class |
+| 20240911-nvivo/ | [NVivo introduction: Annotation, coding, queries](20240911-nvivo/) | workshop |
+| 20240625-ga-overview/ | [Website activity data: Google Analytics overview](20240625-ga-overview/) | internal UBC Library presentation |
+| 20240606-mental-health-data/ | [Finding mental health data: Overview of sources](20240606-mental-health-data/) | for UBC Institute of Mental Health |
+| 20240318-census/ | [Canada Census Data: 2021 Census of Population](20240318-census/) | GEOG 450 class |
 | 20221124-libinsight-reports/ | LibInsight: reports overview | internal UBC LIbrary presentation |
 | 20221019-nvivo-for-lot/ | NVivo support at UBC Library | presentation for LOT, UBC Library |
 | 20221019-libinsight-analyze-data/ | Analyze data in LibInsight | internal UBC Library presentation |
