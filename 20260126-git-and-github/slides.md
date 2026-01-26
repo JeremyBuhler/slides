@@ -578,10 +578,11 @@ __git pull__ downloads GitHub changes to local repository
 <!-- .slide: data-background="orange" -->
 ## Feedback and looking ahead
 
-<img src="images/feedback_git_1.png" width="40%">
+<div style="height: 50vh">
+<img src="images/feedback_git_1.png">
+</div>
 
-
-notes: https://ubc.ca1.qualtrics.com/jfe/form/SV_0MtLRW33U8lIp8x?title=Git1&presenter=jeremy&date=2021-01-26
+notes:
 
 ---
 
