@@ -4,6 +4,12 @@
 	font-style: italic;
 }
 
+
+.left {
+	text-align: left;
+	padding-left: 5%;
+}
+
 .reveal section img {
 	border-style: none;
 }
