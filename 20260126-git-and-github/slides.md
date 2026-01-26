@@ -533,13 +533,13 @@ On GitHub home page, click the "+" menu and select _New repository_
 --
 
 <!-- .slide: data-background="linen" -->
-On the command line, in the "git-practice" directory, run
+On the command line, in the "git-practice" directory <!-- .element class="left" -->
 
 ```bash
 $ git remote add origin https://github.com/<username>/git-practice.git
   
 ```
-Then
+Then: <!-- .element class="left" -->
 
 ```bash
 $ git push -u origin main
@@ -558,9 +558,7 @@ You will be prompted for credentials
 
 ---
 
-### Use _pull_ and _push_ to sync
-
-__git pull__ downloads all changes on GitHub to the local repository
+__git pull__ downloads GitHub changes to local repository
 
 <p class="fragment"><b>git push</b> sends local committed changes to GitHub</p>
 
@@ -578,10 +576,14 @@ __git pull__ downloads all changes on GitHub to the local repository
 ---
 
 <!-- .slide: data-background="orange" -->
-## Practice and looking ahead
+## Feedback and looking ahead
+
+<img src="images/feedback_git_1.png" width="40%">
+
+
+notes: https://ubc.ca1.qualtrics.com/jfe/form/SV_0MtLRW33U8lIp8x?title=Git1&presenter=jeremy&date=2021-01-26
 
 ---
 
 <!-- .slide: data-background="steelblue" -->
 ## Thank you
-
