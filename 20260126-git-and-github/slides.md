@@ -582,7 +582,7 @@ __git pull__ downloads GitHub changes to local repository
 <img src="images/feedback_git_1.png">
 </div>
 
-notes:
+[Feedback survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_0MtLRW33U8lIp8x?title=Git1&presenter=jeremy&date=2021-01-26) for part 1
 
 ---
 

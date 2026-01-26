@@ -7,6 +7,7 @@ Selected presentations by Jeremy Buhler, Data Librarian, UBC Library.
 
 | Folder name | Presentation title | Notes |
 | --- | --- | --- |
+| 20260126-git-and-github/ | [Git, GitHub, and GitHub Pages](https://jeremybuhler.github.io/slides/20260126-git-and-github/) | two-part workshop for ACA@UBC |
 | 20251021-data-viz/ | [Data visualization: principles and tools](https://jeremybuhler.github.io/slides/20251021-data-viz/) | CHBE course |
 | 20250923-library-intro/ | [Overview of UBC Library resources](https://jeremybuhler.github.io/slides/20250923-library-intro/) | JRNL 515C class |
 | 20250919-statcan-data/ | [Find Statistics Canada data](https://jeremybuhler.github.io/slides/20250919-statcan-data/) | SOWK class |
