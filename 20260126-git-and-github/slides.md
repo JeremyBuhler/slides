@@ -587,4 +587,218 @@ __git pull__ downloads GitHub changes to local repository
 ---
 
 <!-- .slide: data-background="steelblue" -->
-## Thank you
+## End of part 1... thank you!
+---
+
+<!-- .slide: data-background="orange" data-transition="slide-in none-out" -->
+## Part 2: Publishing with GitHub Pages 
+
+
+---
+
+<!-- .slide: data-transition="none" -->
+### Learning objectives
+
+Understand GitHub features that support collaboration <!-- .element class="fragment" -->
+
+Publish a repository as a website <!-- .element class="fragment" -->
+
+
+notes: 
+
+---
+
+<!-- .slide: data-background="green" data-transition="none-in slide-out -->
+### Questions from last session, goals for this one
+
+notes: class discussion. Clarify that while these sessions draw on the content offered by the research commons, they are significatnly different in content and order and are an attempt to cover the topics Julia expressed interest in during our initial correspondence.
+
+---
+
+<!-- .slide: data-transition="slide-in none-out" -->
+### Outline and activities 
+
+- Tour of GitHub collaboration features
+- Orientation to GitHub Pages
+- Publish a repository as website or slides
+
+
+notes: 
+
+---
+
+### Quick review: Git and GitHub
+
+notes: in particular, distinguish between Git and Github; also walk through the steps involved in the Git workflow (pull, add (stage), commit (take snapshot), push) 
+
+---
+
+<!-- .slide: data-background="orange" data-transition="none-in slide-out" -->
+## Tour of GitHub collaboration features
+
+notes: 
+
+---
+
+| Term | Description |
+| --- | --- |
+| **clone** | create a local copy of the repository on your computer |
+| **fork**  | create a copy of a GitHub repository in your own GitHub account; you have full control over the new copy | 
+| **pull request** | propose changes to a repository that you forked |
+
+notes: some GitHub terms for collaboration. With Git we talked about pushing and pulling to keep your work in sync with a copy of the repository on GitHub. As we explore GitHub more, there are a few other terms and actions to be aware of. These features allow groups to collaborate, and to allow total strangers to suggests enhancements to a project.
+
+---
+
+<!-- .slide: data-background="linen" -->
+### Forking example
+
+To fork Jeremy's _git-practice_ repository <br/><https://github.com/jeremybuhler/git-practice>
+
+<img src="images/fork_menu.png">
+
+notes: last week we created a repository called "git-practice" that we're going to use again today. If you weren't here, you can catch up quicky by forking my "git-practice" repository. this will create a copy of it in your own GitHub account, where you have full control to modify it and change the settings. 
+
+---
+
+### Other collaboration tools
+
+<img src="images/github_repo_menu.png">
+
+- **Issues** track project-related tasks
+- **Actions** automate processes 
+- **Wiki** allows notes and documentation
+
+notes: In any repository you'll have a few other options to facilitate collaboration. Brief tour of each, use a repository where they're relevant
+
+---
+
+### Issues example
+
+Template repository for UBC Library workshops
+<https://github.com/ubc-library-rc/template/issues?q=is%3Aissue>
+
+
+notes: the template repository controls how UBC Library Research Commons workshops display. It standardizes many aspects for continuity across RC workshops.
+
+---
+
+### Actions example
+
+Public list of Research Commons workshops
+<https://ubc-library-rc.github.io/all.html>
+
+
+notes: 
+
+--
+
+<!-- .slide: data-background-iframe="https://ubc-library-rc.github.io/all.html" data-background-interactive -->
+
+--
+
+#### What the _action_ does every night
+
+1. Get metadata for all repositories via API 
+2. Use repository tags to identify what to list
+3. Generate list from title, url, and tag metadata
+4. Publish the updated list
+
+notes: in this workflow, repository owners make sure their repos have the metadata that identifies them for inclusion in the list. No one needs to update the list - that happens automatically every night, so the list stays current
+
+---
+
+<!-- .slide: data-background="orange" data-transition="none-in slide-out" -->
+## Orientation to GitHub pages
+
+
+notes: 
+
+---
+
+### Overview of the process 
+
+- Owner turns on Pages for the repository <!-- .element class="fragment" -->
+- GitHub uses Jekyll to create webpages <!-- .element class="fragment" -->
+- The webpages are hosted on GitHub servers <!-- .element class="fragment" -->
+- When files change, GitHub updates the site <!-- .element class="fragment" -->
+
+notes: This is the first mention of Jekyll, spend some time with it
+
+---
+
+<!-- .slide: data-background="linen" -->
+### Activate GitHub pages
+
+1. Open your own "git-practice" repository
+2. Go to _Settings -> Pages_
+3. Choose the branch to publish, then _Save_
+
+<img src="images/activate_github_pages.png">
+
+
+notes: some hands on activity now. Last week we created the "git-practice" repository.
+
+---
+
+### URL of published sites
+
+- repository name: **git-practice**
+- owner username: **jeremybuhler**
+- URL: <https://jeremybuhler.github.io/git-practice>
+
+notes: the url for published sites follows a pattern based on the GitHub username and the repository name. It's also possible to use your own domain name. 
+
+---
+<!-- .slide: data-background="green" data-transition="none-in slide-out -->
+
+Does it work?
+
+notes: some people will not have a readme file, others probably will. Use this for troubleshooting and discussion.
+
+---
+
+### Website home page
+
+GitHub looks for one of these files to use as the website homepage (in this order)
+
+1. index.html
+2. index.md
+3. readme.md
+
+notes: if you don't have one of these files, add one to git-practice, then wait for the site to regenerate
+
+---
+
+<!-- .slide: data-background="green" data-transition="none-in slide-out -->
+
+Questions and clarifications
+
+---
+
+<!-- .slide: data-background="orange" data-transition="none-in slide-out" -->
+## Explore, play, practice
+
+notes: at this stage, ask group how many want to practice building a website, how many want to create some presentation slides, and how many would like to try both
+
+---
+
+<!-- .slide: style="font-size: 0.8em" -->
+#### Option 1: publish a website
+1. Fork <https://github.com/jeremybuhler/website-practice>
+2. Turn on _Pages_ in the forked repository
+3. Explore the relationship between files and site
+4. Optional: add a new page with an image  
+<br/>
+<br/>
+#### Option 2: publish presentation slides
+1. Fork <https://github.com/jeremybuhler/reveal-practice>
+2. Turn on _Pages_ in the forked repository
+3. Explore the relationship between files and site
+4. Optional: add a slide with an image
+
+
+---
+<!-- .slide: data-background="steelblue" data-transition="none-in none-out" -->
+
+## Thank you 
