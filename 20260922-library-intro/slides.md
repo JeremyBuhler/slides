@@ -21,10 +21,20 @@ jeremy.buhler@ubc.ca <!-- .element style="color:white" -->
 
 - UBC Library website overview 
 - Research guides
-- _Searching databases_
+- __Searching databases__
 - Refining search results
-- _Data and statistics sources_
+- __Data and statistics sources__
 - Resources for further support
+
+
+---
+
+<!-- .slide: data-background-iframe="https://directory.library.ubc.ca/subjectlibrarians" -->
+
+Notes: Most academic libraries have librarians who specialize in particular subjects. At UBC Library, we refer to them as subject librarians. If you're looking for research help in a specific area and don't need an immediate answer, reaching out to the relevant subject librarian is a more targeted approach than going to the library front desk - the subject librarians are more likely to be able to provide in depth support in your research area.
+
+_search for `Buhler`_ - And this explains why I'm the one visiting your class today, instead of one of my librarian colleagues: I'm the subject librarian for Journalism but also for Data Services in general. Because of this twin role, I'm also going to highlight some data-related resources that may be of interest in the journalism context.
+
 
 
 ---
@@ -32,6 +42,8 @@ jeremy.buhler@ubc.ca <!-- .element style="color:white" -->
 <!-- .slide: data-background="orange" -->
 ## UBC Library website 
 https://library.ubc.ca
+
+
 
 ---
 
@@ -45,8 +57,6 @@ https://library.ubc.ca
 <!-- .slide: data-transition="none" -->
 
 ![Slide 5 Image](media/library_homepage2.png)
-
-
 
 ---
 
@@ -69,11 +79,12 @@ _Demo: [Communication & Mass Media Complete](https://guides.library.ubc.ca/az/co
 
 notes:
 - topic: social media and political polarization
-- search 1: social media AND polarization, 453 results
-- search 2: exact phrase, "social media" AND polarization, reduce to 443
-- search 3: show filters, limit to peer reviewed and last 5 years
-- search 4: show all filters, limit by subject thesauraus, polarization (reduce to 142)
+- search 1: social media AND polarization, 583 results
+- search 2: change polarization to a subject term, reduce to 269
+- search 3: show filters, limit to peer reviewed and last 12 months, reduce to 67
 - go back to all filters, show how to remove filters; also that there are more data ranges 
+
+Talk about search strategy of finding a relevant article, then building from it. Does it reveal keywords or phrases you hadn't considered, but that could be helpful? Do the citations point to other articles useful in your work. 
 
 ---
 
@@ -85,7 +96,6 @@ notes:
     - _Factiva_
     - _Nexis Uni_
 3. Search for recent news on affordable housing
-
 
 ---
 
@@ -140,11 +150,11 @@ Filter by date range, filetype, web domain, etc.
 <!-- .slide: data-background="#e7f7ff" -->
 ## Searching your own topic
 
-- start with a research question <!-- .element: class="fragment" -->
-- identify topics/themes in your question <!-- .element: class="fragment" -->
-- list search terms for each theme <!-- .element: class="fragment" -->
-- try boolean operators, truncation, filters <!-- .element: class="fragment" --> 
-- check search results for new words/phrases <!-- .element: class="fragment" -->
+- start with a research question 
+- identify topics/themes in your question 
+- list search terms for each theme 
+- try boolean operators, truncation, filters  
+- __check search results for new words/phrases/authors/leads__
 
 
 ---
@@ -181,6 +191,7 @@ How – how is the information accessed? Is it available for free or are there b
 - [Statistics Canada](https://www150.statcan.gc.ca/n1/en/type/data)
 - [BC Data Catalogue](https://catalogue.data.gov.bc.ca/)
 - [Canada Open Government Portal](https://search.open.canada.ca/data/)
+- [Abacus (UBC Library's data repository)](https://abacus.library.ubc.ca/)
 - [City of Vancouver Open Data Portal](https://opendata.vancouver.ca/pages/home/)
 
 
@@ -223,6 +234,14 @@ Thousands of tables available from StatCan website
 - _Add/Remove data_ button for more options
 - Check _Source_ to find similar tables
 - Check _Related products_
+
+---
+
+## Abacus data repository
+<https://abacus.library.ubc.ca>
+
+notes: ask about familiarity with Justin McElroy, show Covid 19 data. Talk about role of libraries, and that the library can work with students - and professional journalists - in many ways. 
+Mention other useful dataset, BC Assessment (students must have faculty approval to use it).
 
 ---
 
